@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,1000,4000,7000,9001,1001,700&display=swap')
+$blanco: #FFF
+$rojo: #f20505
+$rojo-b: #bf0404
+$rojo-c: #730202
+$gris-oscuro: #747474
+$gris-oscuro-b: #484748
+$verde: #78bc27
+
+
+$desktop: 980px
+$tablet: 768px
+$grande: 1367px
+
+
+
+body
+    background-color: $blanco
+    margin: 0
+    font-size: 16px
+    font-family: 'Lato', sans-serif
+img
+    max-width: 100%
+ul, li 
+    margin: 0
+    padding: 0
+    list-style: none
+
+.bloques
+    width: 100%
+    height: 100vh
+    padding: 1em
+    position: relative
+    
+    @media screen and (min-width: $desktop)
+        padding: 6em 0
+
+.menu
+    display: flex
+    position: fixed
+    width: 100%
+    clear: both
+    z-index: 9
+    background: rgba(255,255,255,0.7)
+
+.text-center
+    text-align: center
+
+.listado    
+    text-transform: uppercase
+    display: flex
+    margin: 2em auto
+
+    a
+        text-decoration: none
+        margin: 1em
+        font-size: 0.5rem
+        color: $rojo
+        text-transform: uppercase
+        font-weight: 400
+        letter-spacing: 2.16px
+        
+        @media screen and (min-width:$desktop)
+            font-size: 1rem  
+
+h3
+    font-weight: 700 
+    font-style: italic
+    font-size: 0.9rem
+    line-height: 0.5rem 
+
+    @media screen and (min-width:$tablet)
+        font-size: 1rem
+    @media screen and (min-width:$desktop)
+        line-height: 0.3rem
+        font-size: 1.3rem
+
+h3.light
+    font-weight: 100
+
+.BLOCK-HIK
+    margin: 2rem 0px
+
+.BLOCK-1, .BLOCK-2, .BLOCK-3, .BLOCK-4   
+    background: radial-gradient(circle at 0 0, #c4c4c4, #ffffff) !important
+
+.BLOCK-1
+    padding-top: 2rem
+    img
+        display: block
+
+    .productos
+        margin-bottom: 2rem
+        max-width: 70%
+
+        @media only screen and (min-width: $grande)
+            max-width: 100%
+    h1
+        margin-bottom: -20px
+        margin-top: 60px
+
+    h1, h2
+        color: $rojo
+        font-size: 2em
+
+        @media only screen and (min-width: $desktop)
+            font-size: 2.5em  
+
+            line-height: 0.8em
+    h2
+        font-weight: 100    
+        margin-bottom: 24px
+
+    .circulo
+        background-image: url('../img/Ellipse-2.svg')
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: bottom center
+        max-width: 670px
+        display: auto
+        position: absolute
+        bottom: 0
+        left: 50%
+        margin-left: -50%
+
+        @media only screen and (min-width: $tablet)
+            margin-left: -335px
+        
+.BLOCK-2    
+    min-height: 800px
+    background: #c4c4c4 !important
+    img
+        display: block
+
+    .texto-bajada
+        font-size: 0.8rem
+        display:block
+        max-width: 710px
+        margin: 13px auto 26px auto
+        color: $rojo
+        text-align: center
+
+        @media only screen and (min-width: $desktop)
+            font-size: 1rem
+
+    p
+        font-size: 0.8rem
+        display:block
+        max-width: 710px
+        text-align: center
+        margin: auto
+        color: $gris-oscuro
+
+        @media only screen and (min-width: $desktop)
+            font-size: 1.1rem
+            margin: auto auto 100px auto
+
+    .block-detalle
+        color: $rojo
+
+        @media only screen and (min-width: $desktop)
+            margin-top: 100px
+
+.frase
+    display: block
+    position: absolute
+    bottom: 0px
+    right: 0px
+
+
+.BLOCK-3, .BLOCK-4
+
+    @media only screen and (min-width: 380px) and (max-width: 578px)
+        min-height: 800px !important
+
+    @media only screen and (min-width: $desktop)
+        min-height: 800px !important
+
+    .uno
+        position: absolute
+        right: 0
+        max-width: 70%
+        z-index: 2
+
+    .bk
+        text-align: center
+        width: 100%   
+        z-index: 3
+        margin-bottom: 20px 
+        
+        @media only screen and (min-width: $desktop)
+            text-align: left
+            max-width:   519px
+            margin-top: 200px
+            margin-left: 123px
+
+    .codigo
+        color: $rojo-c
+        padding: 0.5rem
+        margin: 0 auto 1rem auto
+
+    .boton
+        display: block !important
+        max-width: 250px
+        margin: 0.3rem  auto!important
+        text-align: center
+        
+        @media only screen and (min-width: $desktop)
+            margin: 0px !important
+
+.titulo
+    font-size: 2rem
+    color: $rojo-b
+    font-weight: 700
+    
+    span
+        font-weight: 100
+
+    @media only screen and (min-width: $desktop)
+        font-size: 3.1rem
+        line-height: 3rem
+
+.boton
+    border: solid 1px $rojo-b
+    padding: 0.5rem 4.5rem
+    margin: 1rem 0
+    text-decoration: none
+    color: $rojo-b
+    border-radius: 15px
+    transition: .3s
+
+    &:hover
+        background: $rojo-b
+        color: $blanco
+
+.BLOCK-5
+    background-color: $gris-oscuro
+    min-height: 1024px !important
+
+    @media only screen and (min-width: $desktop)
+        background: url(../img/bg-final.svg)
+        background-size: cover
+
+    .teco
+        display: block
+    
+    .bk-txt
+        max-width: 475px
+        margin: auto
+        text-align: center
+
+        .texto-bajada
+            color: $blanco
+            font-size: 0.8rem
+
+            @media only screen and (min-width: $desktop)
+                color: $verde
+                font-size: 1rem
+        p
+            color: #747474
+            font-size: 0.8rem
+
+            @media only screen and (min-width: $desktop)
+                font-size: 1rem
+    
+    .bio
+    
+        @media only screen and (min-width: $desktop)
+            margin-left: 125px
+            margin-top: 100px
+
+    .bk-verde
+
+        .iconos
+            max-width: 50%!important
+            @media only screen and (min-width: $desktop)
+                max-width: 20%!important
+                margin-top: 200px
+        
+        h3
+            color: $blanco  
+
+            @media only screen and (min-width: $desktop)
+                color: $verde  
+
+    .cover
+        padding-top: 0.5rem
+
+    a.boton     
+        color: $verde !important   
+        border: solid 1px $verde
+        display: block
+        text-align: center
+        max-width: 250px
+        margin: auto 
+
+        @media only screen and (min-width: $desktop)
+            margin: inherit
+
+        &:hover
+            color: $gris-oscuro !important 
+            background: $verde
+
+            
+.slider 
+    position: relative
+    margin: 0 auto
+    text-decoration: none
+    
+    .slider-wrapper 
+        position: relative
+        height: 100px
+        max-width: 425px
+        overflow: hidden
+        margin: 0 auto
+
+        @media only screen and (min-width: $desktop)
+            margin: 0
+    
+
+
+.slide-item 
+    transition: all 0.3s
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    z-index: 0
+    display: block
+    width: 100%
+    text-decoration: none
+
+
+    &:first-child 
+        opacity: 1
+    
+    &:target 
+        opacity: 1
+        z-index: 5
+
+.slide-item-a
+    background: #c4c4c4
+    @media only screen and (min-width: $desktop)
+        background: #c4c4c4
+
+.slide-item-b
+    background: $gris-oscuro
+    @media only screen and (min-width: $desktop)
+        background: $gris-oscuro-b
+
+.slide-dots 
+    position: absolute
+    left: 0
+    bottom: 0px
+    text-align: center
+    display: block
+    z-index: 10
+    height: 50 
+    max-width: 300px
+    padding: 0.5rem
+
+    .dot 
+        transition: all 0.3s
+        display: inline-block
+        height: 10px
+        width: 10px
+        background: #000
+        border-radius: 50%
+        margin: 0 3px
+        opacity: 0.4
+        border: 2px solid #fff
+
+        &:hover 
+            opacity: 1
+        
+    
+            
